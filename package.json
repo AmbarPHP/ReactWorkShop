@@ -1,0 +1,45 @@
+{
+  "name": "reactworkshop",
+  "version": "1.0.0",
+  "description": "Aprender React con GraphQL",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d dist --source-maps",
+    "start": "nodemon src/index.js --exec babel-node",
+    "serve": "node dist/index.js ",
+    "clean": "rimraf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmbarPHP/ReactWorkShop.git"
+  },
+  "keywords": [
+    "GraphQL",
+    "REACT"
+  ],
+  "author": "AmbarJS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmbarPHP/ReactWorkShop/issues"
+  },
+  "homepage": "https://github.com/AmbarPHP/ReactWorkShop#readme",
+  "dependencies": {
+    "@babel/polyfill": "^7.10.1",
+    "core-js": "^3.6.5",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^15.0.0",
+    "graphql-express": "^2.0.2",
+    "graphql-tool": "^1.0.0",
+    "graphql-tools": "^6.0.7",
+    "mongoose": "^5.9.19"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/node": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "nodemon": "^2.0.4"
+  }
+}
